@@ -73,6 +73,8 @@ DNS:*.trello.catl.st
 DNS:*.tw.catl.st
 DNS:*.twit.catl.st
 DNS:*.twitter.catl.st
+DNS:*.yt.catl.st
+DNS:*.stream.catl.st
 DNS:*.patreon.catl.st
 DNS:*.keeri.patreon.catl.st
 DNS:*.sinnerscout.patreon.catl.st
