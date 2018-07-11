@@ -7,4 +7,4 @@ if (empty($_SERVER["HTTPS"]) || $_SERVER["HTTPS"] == "off") {
     die("Redirecting...");
 }
 
-var_dump($_SERVER);
+echo "You've reached https://".htmlspecialchars($_SERVER["HTTP_HOST"]).htmlspecialchars($_SERVER["REQUEST_URI"]);
