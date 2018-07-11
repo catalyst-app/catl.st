@@ -124,7 +124,9 @@ if (strpos($_SERVER["HTTP_HOST"], "www.") === 0) {
 $host = substr($host, 0, -strlen("catl.st"));
 $host = trim($host, ".");
 
+	echo __LINE__." RURI: ".$_SERVER["REQUEST_URI"]."\n";
 $parameters = array_filter(explode("/", $_SERVER["REQUEST_URI"]));
+	echo __LINE__." PS: ".json_encode(explode("/", $_SERVER["REQUEST_URI"]))."\n";
 
 $redirect = $locations["404"];
 
