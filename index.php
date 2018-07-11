@@ -58,16 +58,16 @@ $locations = [
 	"staff" => "https://catalystapp.co/#our-staff",
 
 	// fauxy boyo
-	"faux.staff" => "https://beta.catalystapp.co/Character/fauxil/",
-	"fauxil.staff" => "https://beta.catalystapp.co/Character/fauxil/",
-	"f.staff" => "https://beta.catalystapp.co/Character/fauxil/",
+	"faux.staff" => "https://beta.catalystapp.co/Character/View/fauxil/",
+	"fauxil.staff" => "https://beta.catalystapp.co/Character/View/fauxil/",
+	"f.staff" => "https://beta.catalystapp.co/Character/View/fauxil/",
 
 	// cute wuffy
-	"l.staff" => "https://beta.catalystapp.co/Character/lykai/",
-	"lykai.staff" => "https://beta.catalystapp.co/Character/lykai/",
+	"l.staff" => "https://beta.catalystapp.co/Character/View/lykai/",
+	"lykai.staff" => "https://beta.catalystapp.co/Character/View/lykai/",
 
 	// him
-	"foxxo.staff" => "https://beta.catalystapp.co/Character/foxxo/",
+	"foxxo.staff" => "https://beta.catalystapp.co/Character/View/foxxo/",
 
 	// egg
 	"ace.staff" => "https://beta.catalystapp.co/Artist/acey/",
