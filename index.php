@@ -139,7 +139,7 @@ if (empty($host) && !empty($parameters)) {
 }
 
 if (count($parameters) >= 1 && array_key_exists($parameters[0].".".$host, $locations)) {
-	$redirect = $locations[$host];
+	$host = array_shift($parameters).".".$host;
 }
 
 if (array_key_exists($host, $locations)) {
