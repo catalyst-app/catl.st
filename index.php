@@ -120,5 +120,6 @@ if (strpos($_SERVER["HTTP_HOST"], "www.") === 0) {
 }
 
 $host = substr($host, 0, -strlen("catl.st"));
+$host = trim($host, ".");
 
-echo "You've reached https://".htmlspecialchars($host).htmlspecialchars($_SERVER["REQUEST_URI"]);
+echo "You've reached HOST ".htmlspecialchars($host)." POST ".htmlspecialchars($_SERVER["REQUEST_URI"]);
