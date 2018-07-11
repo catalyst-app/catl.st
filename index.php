@@ -131,7 +131,7 @@ $parameters = array_filter(explode("/", $_SERVER["REQUEST_URI"]));
 $redirect = $locations["404"];
 
 	echo __LINE__." "."Host: ".$host."\n";
-	echo __LINE__." "."P: ".json_encode($host)."\n";
+	echo __LINE__." "."P: ".json_encode($parameters)."\n";
 	echo __LINE__." "."R: ".$redirect."\n";
 
 // if all empty redirect to main domain
