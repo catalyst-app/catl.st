@@ -150,11 +150,15 @@ if (count($parameters) >= 1 && array_key_exists($parameters[0].".".$host, $locat
 		echo __LINE__." "."Parameter + host exists! ".$parameters[0]."\n";
 	$host = array_shift($parameters).".".$host;
 		echo __LINE__." "."Host: ".$host."\n";
+} else {
+		echo __LINE__." ".$parameters[0].".".$host." does not exist\n";
 }
 
 if (array_key_exists($host, $locations)) {
 	$redirect = $locations[$host];
 		echo __LINE__." "."Setting R: ".$redirect."\n";
+} else {
+		echo __LINE__." ".$host." does not exist\n";
 }
 
 if (count($parameters) >= 1) {
@@ -165,5 +169,4 @@ if (count($parameters) >= 2) {
 }
 
 ?>
-You've reached HOST <?= htmlspecialchars($host) ?>
-<?= $redirect ?>
+<?= "R::: ".$redirect ?>
