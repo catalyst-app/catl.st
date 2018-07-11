@@ -146,5 +146,8 @@ if (count($parameters) >= 2) {
 	$redirect = str_replace("{p2}", urlencode($parameters[1]), $redirect);
 }
 
+header("HTTP/1.1 301 Moved Permanently");
+header("Location: ".$redirect);
+
 ?>
 Redirecting...
