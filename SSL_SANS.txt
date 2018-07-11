@@ -75,3 +75,4 @@ DNS:*.twit.catl.st
 DNS:*.twitter.catl.st
 DNS:*.patreon.catl.st
 DNS:*.keeri.patreon.catl.st
+DNS:*.sinnerscout.patreon.catl.st

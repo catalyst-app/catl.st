@@ -104,6 +104,8 @@ $locations = [
 
 	// patron supporters!
 	"keeri.patreon" => "https://beta.catalystapp.co/Character/View/w5nms1u/",
+
+	"sinnerscout.patreon" => "https://beta.catalystapp.co/Artist/sinnerscout/",
 ];
 
 if (strpos($_SERVER["HTTP_HOST"], "www.") === 0) {
