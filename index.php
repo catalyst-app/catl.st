@@ -3,7 +3,7 @@
 if (empty($_SERVER["HTTPS"]) || $_SERVER["HTTPS"] == "off") {
 	header("HTTP/1.1 301 Moved Permanently");
 
-	// WWWs MAY cause an issue with SSL in the future
+	// WWWs MAY cause an issue with SSL in the future (even though this is mostly irrelevant with HSTS)
 	if (strpos($_SERVER["HTTP_HOST"], "www.") === 0) {
 		header("Location: "."https://".substr($_SERVER["HTTP_HOST"], 4).$_SERVER["REQUEST_URI"]);
 	} else {
