@@ -138,6 +138,10 @@ if (empty($host) && !empty($parameters)) {
 	$host = array_shift($parameters);
 }
 
+if (count($parameters) >= 1 && array_key_exists($parameters[0].".".$host, $locations)) {
+	$redirect = $locations[$host];
+}
+
 if (array_key_exists($host, $locations)) {
 	$redirect = $locations[$host];
 }
