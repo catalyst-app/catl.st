@@ -125,7 +125,7 @@ $host = substr($host, 0, -strlen("catl.st"));
 $host = trim($host, ".");
 
 	echo __LINE__." RURI: ".$_SERVER["REQUEST_URI"]."\n";
-$parameters = array_filter(explode("/", $_SERVER["REQUEST_URI"]));
+$parameters = array_values(array_filter(explode("/", $_SERVER["REQUEST_URI"])));
 	echo __LINE__." PS: ".json_encode(explode("/", $_SERVER["REQUEST_URI"]))."\n";
 
 $redirect = $locations["404"];
@@ -145,12 +145,14 @@ if (empty($host) && empty($parameters)) {
 if (empty($host) && !empty($parameters)) {
 		echo __LINE__." "."No host specified, using ".$parameters[0]."\n";
 	$host = array_shift($parameters);
+	$parameters = array_values($parameters);
 		echo __LINE__." "."Host: ".$host."\n";
 }
 
 if (count($parameters) >= 1 && array_key_exists($parameters[0].".".$host, $locations)) {
 		echo __LINE__." "."Parameter + host exists! ".$parameters[0]."\n";
 	$host = array_shift($parameters).".".$host;
+	$parameters = array_values($parameters);
 		echo __LINE__." "."Host: ".$host."\n";
 } else {
 		echo __LINE__." ".$parameters[0].".".$host." does not exist\n";
