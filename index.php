@@ -23,6 +23,8 @@ if (strpos($_SERVER["HTTP_HOST"], "www.") === 0) {
 }
 
 $locations = [
+	"404" => "https://catalystapp.co/Unimplemented/",
+
 	// root
 	"" => "https://catalystapp.co/",
 
@@ -122,4 +124,32 @@ if (strpos($_SERVER["HTTP_HOST"], "www.") === 0) {
 $host = substr($host, 0, -strlen("catl.st"));
 $host = trim($host, ".");
 
-echo "You've reached HOST ".htmlspecialchars($host)." POST ".htmlspecialchars($_SERVER["REQUEST_URI"]);
+$parameters = array_filter(explode("/", $_SERVER["REQUEST_URI"]));
+
+$redirect = $locations["404"];
+
+// if all empty redirect to main domain
+if (empty($host) && empty($parameters)) {
+	$redirect = $locations[""];
+}
+
+// if there was no host specified, use the first parameter (if one exists)
+if (empty($host) && !empty($parameters)) {
+	$host = array_shift($parameters);
+}
+
+if (array_key_exists($host, $locations)) {
+	$redirect = $locations[$host];
+}
+
+if (count($parameters) >= 1) {
+	$redirect = str_replace("{p1}", urlencode($parameters[0]), $redirect);
+}
+if (count($parameters) >= 2) {
+	$redirect = str_replace("{p2}", urlencode($parameters[1]), $redirect);
+}
+
+?>
+You've reached HOST <?= htmlspecialchars($host) ?>
+<br>
+<?= $redirect ?>
