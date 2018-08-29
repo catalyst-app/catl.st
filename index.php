@@ -100,6 +100,8 @@ $locations = [
 	"twit" => "https://twitter.com/catalystapp_co",
 	"twitter" => "https://twitter.com/catalystapp_co",
 
+	"steam" => "https://steamcommunity.com/groups/catalystapp",
+
 	"tos" => "https://catalystapp.co/Help/ToS",
 	"pp" => "https://catalystapp.co/Help/Privacy",
 
