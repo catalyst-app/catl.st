@@ -100,6 +100,7 @@ $locations = [
 	"twit" => "https://twitter.com/catalystapp_co",
 	"twitter" => "https://twitter.com/catalystapp_co",
 
+	"p" => "https://patreon.com/catalyst",
 	"patreon" => "https://patreon.com/catalyst",
 
 	"stream" => "https://www.youtube.com/channel/UCI8shN2z06O5cBJIfR2DIaA/live",
