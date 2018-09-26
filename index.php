@@ -116,8 +116,8 @@ $locations = [
 
 	"sinnerscout.patreon" => "https://beta.catalystapp.co/Artist/sinnerscout/",
 
-	"mango" => "https://beta.catalystapp.co/Artist/Manguwu",
-	"manguwu" => "https://beta.catalystapp.co/Artist/Manguwu",
+	"mango.patreon" => "https://beta.catalystapp.co/Artist/Manguwu",
+	"manguwu.patreon" => "https://beta.catalystapp.co/Artist/Manguwu",
 ];
 
 if (strpos($_SERVER["HTTP_HOST"], "www.") === 0) {
