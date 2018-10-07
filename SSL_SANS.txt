@@ -78,3 +78,5 @@ DNS:*.stream.catl.st
 DNS:*.patreon.catl.st
 DNS:*.keeri.patreon.catl.st
 DNS:*.sinnerscout.patreon.catl.st
+DNS:*.mango.catl.st
+DNS:*.manguwu.catl.st
