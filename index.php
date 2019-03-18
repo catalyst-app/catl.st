@@ -91,6 +91,8 @@ $locations = [
 
 	"fa" => "https://furaffinity.net/user/catalystapp/",
 
+	"fn" => "https://beta.furrynetwork.com/catalyst/",
+
 	"ig" => "https://instagram.com/catalyst.app/",
 	"insta" => "https://instagram.com/catalyst.app/",
 
