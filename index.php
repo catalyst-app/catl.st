@@ -108,6 +108,8 @@ $locations = [
 
 	"weasyl" => "https://weasyl.com/~catalystapp/",
 
+	"r" => "https://reddit.com/r/catalystapp/",
+
 	"tos" => "https://catalystapp.co/Help/ToS",
 	"pp" => "https://catalystapp.co/Help/Privacy",
 
