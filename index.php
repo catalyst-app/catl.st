@@ -107,6 +107,7 @@ $locations = [
 	"steam" => "https://steamcommunity.com/groups/catalystapp",
 
 	"da" => "https://catalystapp.deviantart.com/",
+	"deviantart" => "https://catalystapp.deviantart.com/",
 
 	"weasyl" => "https://weasyl.com/~catalystapp/",
 
