@@ -126,6 +126,9 @@ $locations = [
 
 	"tumblr" => "https://catalystapp-co.tumblr.com",
 
+	"fb" => "https://facebook.com/catalystapp.co",
+	"facebook" => "https://facebook.com/catalystapp.co",
+
 	"stream" => "https://www.youtube.com/channel/UCI8shN2z06O5cBJIfR2DIaA/live",
 	"yt" => "https://www.youtube.com/channel/UCI8shN2z06O5cBJIfR2DIaA/live",
 
