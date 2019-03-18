@@ -102,6 +102,8 @@ $locations = [
 
 	"steam" => "https://steamcommunity.com/groups/catalystapp",
 
+	"da" => "https://catalystapp.deviantart.com/",
+
 	"tos" => "https://catalystapp.co/Help/ToS",
 	"pp" => "https://catalystapp.co/Help/Privacy",
 
