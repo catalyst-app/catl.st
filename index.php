@@ -124,6 +124,8 @@ $locations = [
 	"kofi" => "https://ko-fi.com/catalystapp",
 	"ko-fi" => "https://ko-fi.com/catalystapp",
 
+	"tumblr" => "https://catalystapp-co.tumblr.com",
+
 	"stream" => "https://www.youtube.com/channel/UCI8shN2z06O5cBJIfR2DIaA/live",
 	"yt" => "https://www.youtube.com/channel/UCI8shN2z06O5cBJIfR2DIaA/live",
 
