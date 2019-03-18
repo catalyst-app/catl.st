@@ -85,6 +85,8 @@ $locations = [
 	"tele" => "https://telegram.dog/catalystapp",
 	"telegram" => "https://telegram.dog/catalystapp",
 
+	"telegram-announcements" => "https://telegram.dog/catalystapp_announcements",
+
 	"gh" => "https://github.com/catalyst-app/Catalyst",
 	"git" => "https://github.com/catalyst-app/Catalyst",
 	"github" => "https://github.com/catalyst-app/Catalyst",
