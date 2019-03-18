@@ -106,6 +106,8 @@ $locations = [
 
 	"da" => "https://catalystapp.deviantart.com/",
 
+	"weasyl" => "https://weasyl.com/~catalystapp/",
+
 	"tos" => "https://catalystapp.co/Help/ToS",
 	"pp" => "https://catalystapp.co/Help/Privacy",
 
