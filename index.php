@@ -116,6 +116,9 @@ $locations = [
 	"p" => "https://patreon.com/catalyst",
 	"patreon" => "https://patreon.com/catalyst",
 
+	"kofi" => "https://ko-fi.com/catalystapp",
+	"ko-fi" => "https://ko-fi.com/catalystapp",
+
 	"stream" => "https://www.youtube.com/channel/UCI8shN2z06O5cBJIfR2DIaA/live",
 	"yt" => "https://www.youtube.com/channel/UCI8shN2z06O5cBJIfR2DIaA/live",
 
