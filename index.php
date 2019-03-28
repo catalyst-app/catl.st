@@ -184,7 +184,11 @@ if (count($parameters) >= 2) {
 	$redirect = str_replace("{p2}", urlencode($parameters[1]), $redirect);
 }
 
-header("HTTP/1.1 301 Moved Permanently");
+if ($redirect == "https://catalystapp.co/Unimplemented/") {
+	header("HTTP/1.1 302 Unimplemented");
+} else {
+	header("HTTP/1.1 301 Moved Permanently");
+}
 header("Location: ".$redirect);
 
 ?>
