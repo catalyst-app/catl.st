@@ -140,6 +140,8 @@ $locations = [
 	"mango.patreon" => "https://beta.catalystapp.co/Artist/Manguwu",
 	"manguwu.patreon" => "https://beta.catalystapp.co/Artist/Manguwu",
 
+	"toish.patreon" => "https://beta.catalystapp.co/Character/toish",
+
 	// fren
 	"k" => "https://kalka.io/",
 ];
