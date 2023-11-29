@@ -21,7 +21,7 @@ const singleLevelSubdomainsByUrl = getSubdomainsByUrl(singleLevelSubdomains);
 
 for (const [url, subdomains] of Object.entries(singleLevelSubdomainsByUrl)) {
   for (const subdomain of subdomains) {
-    baseRewrites.push(`rewrite ^/${subdomain}/(.*)$ ${url} break;`);
+    baseRewrites.push(`rewrite ^/${subdomain}(/.*)$ ${url} break;`);
     baseRewrites.push(`rewrite ^/${subdomain}$ ${url} break;`);
   }
 
@@ -61,7 +61,7 @@ for (const [prefix, group] of Object.entries(doubleLevelSubdomains)) {
     baseRewrites.push(`rewrite ^/${prefix}/${subdomain}(/?.*)$ ${url} break;`);
   }
 
-  baseRewrites.push(`rewrite ^/${prefix}/(.*)$ ${group["$root"]} break;`);
+  baseRewrites.push(`rewrite ^/${prefix}(/.*)$ ${group["$root"]} break;`);
   baseRewrites.push(`rewrite ^/${prefix}$ ${group["$root"]} break;`);
 
   serverBlocks.push(`
@@ -70,7 +70,7 @@ for (const [prefix, group] of Object.entries(doubleLevelSubdomains)) {
     listen 8080;
     server_name ${prefix}.${OUR_DOMAIN};
 
-    ${Object.entries(group).filter(([subdomain]) => subdomain !== "$root").map(([subdomain, url]) => `rewrite ^/${subdomain}/(.*)$ ${url} break;`).join("\n")}
+    ${Object.entries(group).filter(([subdomain]) => subdomain !== "$root").map(([subdomain, url]) => `rewrite ^/${subdomain}(/.*)$ ${url} break;`).join("\n")}
     ${Object.entries(group).filter(([subdomain]) => subdomain !== "$root").map(([subdomain, url]) => `rewrite ^/${subdomain}$ ${url} break;`).join("\n")}
 
     return 301 ${group["$root"].replaceAll("$1", "$request_uri")};
