@@ -70,7 +70,7 @@ for (const [prefix, group] of Object.entries(doubleLevelSubdomains)) {
     listen 8080;
     server_name ${prefix}.${OUR_DOMAIN};
 
-    ${Object.entries(group).filter(([subdomain]) => subdomain !== "$root").map(([subdomain, url]) => `rewrite ^/${subdomain}/(.*)$ ${url} break;`).join("\n")}
+    ${Object.entries(group).filter(([subdomain]) => subdomain !== "$root").map(([subdomain, url]) => `rewrite ^/${subdomain}(/.*)$ ${url} break;`).join("\n")}
     ${Object.entries(group).filter(([subdomain]) => subdomain !== "$root").map(([subdomain, url]) => `rewrite ^/${subdomain}$ ${url} break;`).join("\n")}
 
     return 301 ${group["$root"].replaceAll("$1", "$request_uri")};
