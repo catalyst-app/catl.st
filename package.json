@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "@types/object.groupby": "^1.0.3",
+    "bun-types": "^1.0.14"
+  },
+  "dependencies": {
+    "object.groupby": "^1.0.1",
+    "yaml": "^2.3.4"
+  }
+}
