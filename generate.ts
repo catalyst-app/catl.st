@@ -113,6 +113,16 @@ ${sans.map(san => `#   ${san}`).join("\n")}
 server {
   listen [::]:8080 default_server;
   listen 8080 default_server;
+  server_name internal-status;
+
+  location /status {
+    stub_status on;
+  }
+}
+
+server {
+  listen [::]:8080 default_server;
+  listen 8080 default_server;
   server_name _;
 
   location / {
