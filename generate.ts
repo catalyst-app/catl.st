@@ -111,6 +111,20 @@ console.log(`
 ${sans.map(san => `#   ${san}`).join("\n")}
 
 server {
+  listen [::]:8080;
+  listen 8080;
+  server_name internal-status;
+
+  location /status {
+    stub_status on;
+  }
+
+  location /ready {
+    return 200 'ok';
+  }
+}
+
+server {
   listen [::]:8080 default_server;
   listen 8080 default_server;
   server_name _;
