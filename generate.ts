@@ -118,6 +118,10 @@ server {
   location /status {
     stub_status on;
   }
+
+  location /ready {
+    return 200 'ok';
+  }
 }
 
 server {
