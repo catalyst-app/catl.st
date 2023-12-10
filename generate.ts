@@ -115,6 +115,8 @@ server {
   listen 8080;
   server_name internal-status;
 
+  access_log off;
+
   location /status {
     stub_status on;
   }
